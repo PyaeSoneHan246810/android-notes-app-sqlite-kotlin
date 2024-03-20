@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/off_white"
+    tools:context=".AddNoteActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <TextView
+            android:id="@+id/tvAddNote"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="@string/add_note"
+            android:textColor="@color/dark_green"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ivDoneButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@id/tvAddNote"
+            android:layout_alignBottom="@id/tvAddNote"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/ic_done"
+            android:contentDescription="@string/done_icon_button_content_desc"
+            app:tint="@color/dark_green" />
+
+        <EditText
+            android:id="@+id/etNoteTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvAddNote"
+            android:layout_marginTop="12dp"
+            android:padding="18dp"
+            android:maxLines="1"
+            android:hint="@string/et_note_title_hint"
+            android:textColorHint="@color/light_green"
+            android:autofillHints="name"
+            android:background="@drawable/border"
+            android:inputType="text"
+            android:fontFamily="@font/poppins"
+            android:textSize="18sp"
+            android:textColor="@color/off_black"
+            android:textStyle="normal"
+            android:textIsSelectable="true"
+            android:textAlignment="textStart"
+            android:textDirection="ltr"
+            android:textCursorDrawable="@color/green"/>
+
+        <EditText
+            android:id="@+id/etNoteContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/etNoteTitle"
+            android:layout_marginTop="14dp"
+            android:padding="18dp"
+            android:gravity="start"
+            android:hint="@string/et_note_content_hint"
+            android:textColorHint="@color/light_green"
+            android:autofillHints="name"
+            android:background="@drawable/border"
+            android:inputType="text"
+            android:fontFamily="@font/poppins"
+            android:textSize="18sp"
+            android:textColor="@color/off_black"
+            android:textStyle="normal"
+            android:textIsSelectable="true"
+            android:textAlignment="textStart"
+            android:textDirection="ltr"
+            android:textCursorDrawable="@color/green"/>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

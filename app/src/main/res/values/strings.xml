@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Notes App</string>
+    <string name="notes">Notes.</string>
+    <string name="add_note">Add Note</string>
+    <string name="edit_note">Edit Note</string>
+
+    <string name="add_icon_button_content_desc">Add Note Icon Button</string>
+    <string name="done_icon_button_content_desc">Done Icon Button</string>
+    <string name="edit_icon_button_content_desc">Edit Icon Button</string>
+    <string name="delete_icon_button_content_desc">Delete Icon Button</string>
+
+    <string name="et_note_title_hint">Enter title</string>
+    <string name="et_note_content_hint">Enter content</string>
+
+    <string name="tv_note_title_placeholder">Note title</string>
+    <string name="tv_note_content_placeholder">Note content</string>
+    <string name="delete_all">Delete all</string>
+</resources>
